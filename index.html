@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        #header{
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            background-color: rgb(7, 7, 54);
+            border-radius: 10px;
+        }
+        #header>button{
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+            background-color: rgb(7, 7, 54);
+            color: white;
+            font-weight: bold;
+            border: rgb(7, 7, 54) solid 1px;
+        }
+        #menu{
+            display: grid;
+            width: 100%;
+            height: 300px;
+            justify-content: space-around;
+            grid-gap: 10px;
+            grid-template-columns: repeat(4,1fr);
+            margin-top: 10px;
+        }
+        #menuhead{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style> -->
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    <div id="header"><button>Login</button>
+        <button>Signup</button>
+        <button>Menu</button></div>
+        <div id="menuhead">
+            <h1>Menu</h1>
+        </div>
+        <div id="menu">
+        </div>
+</body>
+</html>
+<script src="index.js"></script>
+<!-- <script> 
+    let display_div = document.getElementById("menu");
+ 
+     async function orderfood(){
+         try{
+         let res = await fetch("https://themealdb.com/api/json/v1/1/categories.php");
+         let data = await res.json();
+         let customer = data.categories;
+         displaymenu(customer);
+         console.log("data:",data);
+         }catch(err){
+             console.log("err:",err);
+         }
+     }
+    orderfood();
+    var cart=[];
+ function displaymenu(arr){
+     arr.forEach(function(customer){
+         var div = document.createElement("div");
+         var img = document.createElement("img");
+         img.src= customer.strCategoryThumb;
+ 
+        var category = document.createElement("p");
+        category.textContent = `Category :${customer.strCategory}`
+         var idnum = document.createElement("p");
+         idnum.textContent =`ID -${customer.idCategory}`;
+        var item = document.createElement("p");
+        item.textContent= `Price -${Math.floor(Math.random()*500)}`;
+
+        var button = document.createElement("button");
+        button.textContent="Add to Cart";
+        button.addEventListener("click",additems);
+        
+        function additems(){
+            cart.push(arr);
+
+        localstorage.setItem("cart",JSON.stringify(arr));
+        }
+       
+ 
+
+         div.append(img,idnum,category,item,button);
+ 
+         display_div.append(div);
+ 
+     });
+ }
+ 
+ 
+ </script> -->
